@@ -1,0 +1,17 @@
+
+ <!-- Bootstrap Jumbotron Example -->
+ <%- include('header.ejs') %>
+ <body class="jumbotron">
+    <h1 class="display-4">Congratulations!</h1>
+    <p class="lead">You have successfully created a new workspace for Split!</p>
+    <p><table class="table">
+        <tr><td>Workspace Name</td><td class="text-left"><%= WSNAME %></td></tr>
+        <tr><td>Requires Comments</td><td class="text-left"><%= WSREQCOMMENTS %></td></tr>
+        <tr><td>Environments</td><td class="text-left"><%= ENVS %></td></tr>
+        <tr><td>Traffic Types</td><td class="text-left"><%= TTS %></td></tr>
+        </table>
+    </p>
+    <a class="btn btn-primary btn-lg" href="https://app.split.io/org/<%= ORGID %>/ws/<%= WSID %>/mywork" role="button">Click Here to view!</a>
+
+
+<%- include('footer.ejs') %>

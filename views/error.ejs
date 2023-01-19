@@ -1,0 +1,14 @@
+ <!-- Bootstrap Jumbotron Example -->
+ <%- include('header.ejs') %>
+ <body class="jumbotron">
+    <h1 class="display-4">Oh No! </h1>
+    <p class="lead">There was an error when creating your workspace!</p>
+    <p><table class="table">
+        <tr><td>Error Code:</td><td class="text=left"><%= ERRCODE %></td></tr>
+        <tr><td>Error Message:</td><td class="text-left"><%= ERRMSG %></td></tr>
+        </table>
+    </p>
+    <a class="btn btn-primary btn-lg" href="/" role="button">Click Here to go back and try again</a>
+
+
+<%- include('footer.ejs') %>

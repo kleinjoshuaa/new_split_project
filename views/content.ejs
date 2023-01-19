@@ -1,0 +1,77 @@
+<h1 class="text-center">Welcome to the Split Workspace Creator!</h1>
+<form action="/createWS" method="post">
+  <div class="form-group row">
+    <label for="team" class="text-right col-4 col-form-label">Team Name</label> 
+    <div class="col-8">
+      <input id="team" name="team" placeholder="Enter your team name" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 text-right">Environments</label> 
+    <div class="col-8">
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_0" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="Dev"> 
+        <label for="checkbox_0" class="custom-control-label">Dev</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_1" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="QA"> 
+        <label for="checkbox_1" class="custom-control-label">QA</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_2" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="Test"> 
+        <label for="checkbox_2" class="custom-control-label">Test</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_3" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="PreProd"> 
+        <label for="checkbox_3" class="custom-control-label">PreProd</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_4" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="Stage"> 
+        <label for="checkbox_4" class="custom-control-label">Stage</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="environments" id="checkbox_5" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="Prod"> 
+        <label for="checkbox_5" class="custom-control-label">Prod</label>
+      </div>
+ 
+      <!-- <span id="checkboxHelpBlock" class="form-text text-muted">Note that Prod and Stage are always created</span> -->
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 text-right">Additional TrafficTypes</label> 
+    <div class="col-8">
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="traffictypes" id="traffictypes_0" type="checkbox" aria-describedby="traffictypesHelpBlock" class="custom-control-input" value="anonymous"> 
+        <label for="traffictypes_0" class="custom-control-label">anonymous</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="traffictypes" id="traffictypes_1" type="checkbox" aria-describedby="traffictypesHelpBlock" class="custom-control-input" value="device"> 
+        <label for="traffictypes_1" class="custom-control-label">device</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="traffictypes" id="traffictypes_2" type="checkbox" aria-describedby="traffictypesHelpBlock" class="custom-control-input" value="account"> 
+        <label for="traffictypes_2" class="custom-control-label">account</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="traffictypes" id="traffictypes_3" type="checkbox" aria-describedby="traffictypesHelpBlock" class="custom-control-input" value="customer"> 
+        <label for="traffictypes_3" class="custom-control-label">customer</label>
+      </div> 
+      <span id="traffictypesHelpBlock" class="form-text text-muted">Note that user is always created</span>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 text-right">Require Comments?</label> 
+    <div class="col-8">
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input name="comments" id="comments_0" type="checkbox" class="custom-control-input" value="true" aria-describedby="commentsHelpBlock"> 
+        <label for="comments_0" class="custom-control-label"></label>
+      </div> 
+      <span id="commentsHelpBlock" class="form-text text-muted">Require Comments for Split and Segments Changes?</span>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Create Environment</button>
+    </div>
+  </div>
+</form>
