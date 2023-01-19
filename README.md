@@ -9,6 +9,6 @@ Enhancements could be made for error handling - right now if there are any issue
 
 
 
-Install with `npm install` and ensure that a .env file exists with your API_KEY and ORG_ID strings in it. Once there, run `node index.js` and it will serve on port 3201. 
+Install with `npm install` and ensure that a `.env` file exists with your `API_KEY` and `ORG_ID` strings in it. Once there, run `node index.js` and it will serve on port 3201. 
 
 Enjoy
